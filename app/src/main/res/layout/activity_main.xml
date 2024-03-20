@@ -29,13 +29,14 @@
         android:text="Select your date of birth"
         android:textColor="@color/darkBlue"
         app:layout_constraintTop_toBottomOf="@+id/heading"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="80dp"
         android:textSize="20sp"
         />
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/background"
         app:layout_constraintTop_toBottomOf="@+id/selectDob"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,15 +45,58 @@
         android:layout_marginTop="16dp"
         />
     <TextView
+        android:id="@+id/selectedDobText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="your are this many minutes old"
-        android:layout_marginTop="16dp"
+        android:text="You have selected"
+        android:layout_marginTop="48dp"
         android:textSize="16sp"
         android:textColor="@color/darkBlue"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/selectedDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDobText"
+        android:layout_margin="8dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDob"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="minutes old"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
